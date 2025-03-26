@@ -1,0 +1,28 @@
+{
+  "name": "creative-incubator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon src/js/server.js", 
+    "watch": "sass --watch src/scss:public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlTobias/Creative-Incubator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlTobias/Creative-Incubator/issues"
+  },
+  "homepage": "https://github.com/CarlTobias/Creative-Incubator#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,156 @@
+// Imported fonts from Google Fonts via download
+@font-face {
+    font-family: "Open-Sans";
+    src: url("/public/assets/fonts/OpenSans-VariableFont.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/public/assets/fonts/Poppins-Regular.ttf");
+}
+
+
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+    padding: 0;
+    margin: 0;
+}
+
+
+// First Section
+.scroll1 {
+    width: 100vw;
+    height: 99vh;
+    background-image: url("/public/assets/images/background1.png");
+    background-repeat: no-repeat;
+}
+
+// Header Bar
+.headerBar {
+    @include center();
+    justify-content: space-between;
+    margin: 0.5rem;
+    margin-bottom: 0;
+}
+
+#logo {
+    width: 15vw;
+}
+
+.pages {
+    @include center();
+    flex-direction: row;
+    gap: 3rem;
+
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #F5EFE7;
+}
+
+a {
+    color: #F5EFE7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login {
+    @include center();
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.login button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #F5EFE7;
+}
+
+.login p {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #F5EFE7;
+}
+
+// Body Text and Button
+.headertextarea {
+    @include center();
+    align-items: start;
+    flex-direction: column;
+    width: 45vw;
+
+    margin-top: 20vh;
+    margin-left: 1.5rem;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 68px;
+    color: #F5EFE7;
+    margin-bottom: 0;
+}
+
+.headertextarea p {
+    font-family: 'Open-Sans';
+    font-size: 24px;
+    font-weight: 100;
+    color: #F5EFE7;
+    margin-top: 0;
+}
+
+.headertextarea button {
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: #90030C;
+
+    font-family: 'Open-Sans';
+    font-size: 26px;
+    color: #F5EFE7;
+}
+
+
+// Second Section
+.scroll2 {
+    @include center();
+    height: 60vh;
+    margin-top: -10rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) );
+}
+
+.headertextarea2 {
+    @include center();
+    flex-direction: column;
+    width: 75vw;
+    margin-top: 10rem;
+}
+
+.headertextarea2 h1 {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 50px;
+    color: #F5EFE7;
+}
+
+.headertextarea2 p {
+    font-family: 'Open-Sans';
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+    color: #F5EFE7;
+}
