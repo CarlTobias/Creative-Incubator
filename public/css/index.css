@@ -3,8 +3,8 @@
   src: url("/public/assets/fonts/OpenSans-VariableFont.ttf");
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("/public/assets/fonts/Poppins-Regular.ttf");
+  font-family: "Montserrat";
+  src: url("/public/assets/fonts/Montserrat-VariableFont.ttf");
 }
 body {
   display: flex;
@@ -14,11 +14,15 @@ body {
   margin: 0;
 }
 
-.scroll1 {
-  width: 100vw;
-  height: 99vh;
-  background-image: url("/public/assets/images/background1.png");
-  background-repeat: no-repeat;
+.body {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/public/assets/images/carLanding.png") center/cover no-repeat;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
 }
 
 .headerBar {
@@ -26,123 +30,200 @@ body {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  margin: 0.5rem;
-  margin-bottom: 0;
-}
-
-#logo {
-  width: 15vw;
-}
-
-.pages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
-  gap: 3rem;
-  font-family: "Poppins";
-  font-size: 20px;
-  color: #F5EFE7;
+  padding: 2rem;
 }
 
-a {
+.logo {
+  width: 12vw;
+}
+
+.loginButton a {
+  font-family: "Montserrat";
   color: #F5EFE7;
+  font-size: 32px;
+  font-weight: 600;
   text-decoration: none;
-  cursor: pointer;
 }
 
-.login {
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  gap: 0.5rem;
+  justify-content: space-around;
+  height: 90vh;
+  padding: 0 5rem 0 5rem;
 }
 
-.login button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  font-family: "Poppins";
-  font-size: 20px;
+.title {
+  font-family: "Montserrat";
+  font-size: 128px;
+  font-weight: 600;
+  color: #F5EFE7;
+  margin: 0;
+  width: 50vw;
+}
+
+.subtitle {
+  font-family: "Montserrat";
+  font-size: 54px;
+  font-weight: 400;
+  color: #F5EFE7;
+  margin: 1rem 0 0 0;
+  width: 45vw;
+}
+
+.highlight {
+  color: #ae040f;
+}
+
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.3);
+  border: 5px solid #F5EFE7;
+  backdrop-filter: blur(5px);
+  border-radius: 2rem;
+  padding: 5vh 0 5vh 0;
+  width: 35vw;
   color: #F5EFE7;
 }
 
-.login p {
-  font-family: "Poppins";
-  font-size: 20px;
-  color: #F5EFE7;
+.header {
+  font-family: "Open-Sans";
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
 }
 
-.headertextarea {
+.subHeader {
+  font-family: "Open-Sans";
+  font-size: 38px;
+  font-weight: 100;
+  text-align: center;
+  color: #BEBEBE;
+  margin: 0;
+}
+
+form {
   display: flex;
   justify-content: center;
   align-items: center;
   align-items: start;
   flex-direction: column;
-  width: 45vw;
-  margin-top: 20vh;
-  margin-left: 1.5rem;
+  gap: 4vh;
+  margin-top: 2rem;
 }
 
-h1 {
-  font-family: "Poppins";
-  font-weight: 200;
-  font-size: 68px;
-  color: #F5EFE7;
-  margin-bottom: 0;
-}
-
-.headertextarea p {
-  font-family: "Open-Sans";
-  font-size: 24px;
-  font-weight: 100;
-  color: #F5EFE7;
-  margin-top: 0;
-}
-
-.headertextarea button {
-  border: none;
-  outline: none;
-  padding: 1rem;
-  border-radius: 0.3rem;
-  background-color: #90030C;
-  font-family: "Open-Sans";
-  font-size: 26px;
-  color: #F5EFE7;
-}
-
-.scroll2 {
+.username, .email, .password {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  margin-top: -10rem;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
-}
-
-.headertextarea2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
-  width: 75vw;
-  margin-top: 10rem;
+  gap: 1rem;
 }
 
-.headertextarea2 h1 {
-  font-family: "Poppins";
-  font-weight: 200;
-  font-size: 50px;
-  color: #F5EFE7;
-}
-
-.headertextarea2 p {
+.subHeader2 {
   font-family: "Open-Sans";
-  font-size: 24px;
-  font-weight: 200;
-  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  text-align: left;
   color: #F5EFE7;
+  margin: 0;
+}
+
+input {
+  font-family: "Montserrat";
+  width: 32vw;
+  height: 3.5vh;
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 24px;
+}
+
+button {
+  font-family: "Open-Sans";
+  width: 100%;
+  margin-top: 2rem;
+  padding: 12px;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 38px;
+}
+
+input::placeholder {
+  color: #BEBEBE;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.loginAccount {
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 400;
+  color: #F5EFE7;
+  margin: 1rem 0 1rem 0;
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.titleText {
+  font-family: "Montserrat";
+  font-size: 70px;
+  font-weight: 600;
+  color: #292929;
+  padding-left: 2rem;
+}
+
+.bodyText {
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 400;
+  text-align: right;
+  color: #292929;
+  width: 55vw;
+  padding-right: 2rem;
+}
+
+.car img {
+  height: 50vh;
+}
+
+.box1, .box2 {
+  background-color: #BEBEBE;
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

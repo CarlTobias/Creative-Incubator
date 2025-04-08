@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rev-Up</title>
-        <link rel="stylesheet" href="/public/css/index.css"> <!-- when converting to .ejs remove "public" from the path -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rev-Up</title>
+    <link rel="stylesheet" href="/public/css/index.css"> <!-- when converting to .ejs remove "public" from the path -->
+</head>
 
-    <body>
-        <div class="scroll1">
-            <div class="headerBar">
-                <div class="logo">
-                    <img src="/public/assets/images/logoRed.png" alt="Logo" id="logo"> <!-- insert logo-->
-                </div>
-            
-                <div class="pages">
-                    <a href="">
-                        <p>Home</p>
-                    </a>
-                    <a href="">
-                        <p>About Us</p>
-                    </a>
-                    <a href="">
-                        <p>Services</p>
-                    </a>
-                    <a href="">
-                        <p>Contact Us</p>
-                    </a>
-                </div>
-            
-                <div class="login">
-                    <button>Sign In</button>
-                    <p>/</p>
-                    <button>Log In</button>
-                </div>
+<body>
+    <div class="body">
+        <div class="headerBar">
+            <div class="logoContainer">
+                <img src="/public/assets/images/logoWhite.png" alt="MiniLogo" class="logo">
             </div>
-            
-            <div class="headertextarea">
-                <h1>Stay on Track, Stay on the Road</h1>
-                <p>
-                    Our platform is a comprehensive tool designed to
-                    help car owners and enthusiasts effortlessly manage
-                    vehicle maintenance while building a community around
-                    automotive care.
-                </p>
-            
-                <button>Download</button>
+
+            <div class="loginButton">
+                <a href="">Log-In</a>
             </div>
         </div>
 
-        <div class="scroll2">
-            <div class="headertextarea2">
-                <h1>Stay on Track, Stay on the Road</h1>
-                <p>
-                    Our platform is a comprehensive tool designed to
-                    help car owners and enthusiasts effortlessly manage
-                    vehicle maintenance while building a community around
-                    automotive care.
-                </p>
+        <div class="content">
+            <div class="text">
+                <p class="title">Maintain your <span class="highlight">Ride</span>, Join the <span class="highlight">Drive</span></p>
+                <p class="subtitle"><span class="highlight">Rev up</span> your ride with our all-in-one platform—where car care meets community!</p>
+            </div>
+            <div class="signupContainer">
+
+                <p class="header">Create Account</p>
+                <p class="subHeader">Get Started with Rev-Up</p>
+
+                <form action="/signup" method="post">
+                    <div class="username">
+                        <p class="subHeader2">Username</p>
+                        <input type="text" id="username" name="username" required, placeholder="Enter username">
+                    </div>
+
+                    <div class="email">
+                        <p class="subHeader2">Email Address</p>
+                        <input type="email" id="email" name="email" required, placeholder="Enter Email Address">
+                    </div>
+                    
+                    <div class="password">
+                        <p class="subHeader2">Password</p>
+                        <input type="password" id="password" name="password" required, placeholder="Create Password">
+                    </div>
+                    
+
+                    <button type="submit">Sign Up</button>
+                </form>
+
+                <a href="" class="loginAccount">Already have an  account?</a>
             </div>
         </div>
-    </body>
+
+        <div class="content2">
+            <div class="textContainer">
+                <p class="titleText">About Us</p>
+                <p class="bodyText">
+                    Our platform is a comprehensive tool designed to help car owners and enthusiasts 
+                    effortlessly manage vehicle maintenance while building a community around
+                </p>
+            </div>
+
+            <div class="car">
+                <div class="box1">
+                    <p class="titleText">Easy to Apply</p>
+                    <p class="bodyText">Our platform is a comprehensive tool designed to help car owners and enthusiasts effortlessly manage vehicle maintenance</p>
+                </div>
+
+                <div class="box2">
+                    <p class="titleText">Easy to Apply</p>
+                    <p class="bodyText">Our platform is a comprehensive tool designed to help car owners and enthusiasts effortlessly manage
+                        vehicle maintenance</p>
+                </div>
+                
+                <img src="/public/assets/images/car.png" alt="carVroomVroom">
+            </div>
+        </div>
+
+
+
+
+    </div>
+    
+    <script src="/public/js/landing.js"></script>
+
+</body>
+
 </html>
